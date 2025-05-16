@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto - Estruturas de Dados Avançadas - Thiago Abreu: Código-Fonte de grafo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Projeto - Estruturas de Dados Avançadas - Thiago Abreu
+   </div>
+   <div id="projectbrief">Grafo, Antenas e Locais Nefastos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('grafo_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">grafo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="grafo_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef GRAFO_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define GRAFO_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="antenas_8h.html">antenas.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">struct </span><a class="code hl_struct" href="structVertice.html">Vertice</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structAresta.html">   33</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structAresta.html">Aresta</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structAresta.html#a15f4b2f6a01fe524e7c3c7a1937eb679">   34</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_variable" href="structAresta.html#a15f4b2f6a01fe524e7c3c7a1937eb679">destino</a>; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structAresta.html#a91bb2517bfe725bee1f7a873228a9958">   35</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structAresta.html">Aresta</a> *<a class="code hl_variable" href="structAresta.html#a91bb2517bfe725bee1f7a873228a9958">proximo</a>;  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="grafo_8h.html#a4dfeea32aaaf68604a93805ab84f33e1">   36</a></span> } <a class="code hl_struct" href="structAresta.html">Aresta</a>;</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structVertice.html">   43</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structVertice.html">Vertice</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structVertice.html#ab79ea234797d03dd791601ceb2cfb766">   44</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structVertice.html#ab79ea234797d03dd791601ceb2cfb766">frequencia</a>;          </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structVertice.html#a1438c5dc5f780e2621b4350b2f940fb0">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structVertice.html#a1438c5dc5f780e2621b4350b2f940fb0">x</a>, <a class="code hl_variable" href="structVertice.html#ae9aae69725a37b059383c13ccd43a95e">y</a>;                 </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structVertice.html#adedef9ffb6a2e66fdebbe25299bec5d3">   46</a></span>    <a class="code hl_struct" href="structAresta.html">Aresta</a> *<a class="code hl_variable" href="structVertice.html#adedef9ffb6a2e66fdebbe25299bec5d3">arestas</a>;          </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structVertice.html#a40b6b8cc9000b134f9eb0609446a2ed5">   47</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_variable" href="structVertice.html#a40b6b8cc9000b134f9eb0609446a2ed5">proximo</a>;  </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="grafo_8h.html#a901d403606dfb55e6d42b899c05d3347">   48</a></span> } <a class="code hl_struct" href="structVertice.html">Vertice</a>;</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structFilaVertice.html">   55</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structFilaVertice.html#a8d3f78a8345a5a0b05da916ef417bbb4">   56</a></span>   <a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_variable" href="structFilaVertice.html#a8d3f78a8345a5a0b05da916ef417bbb4">v</a>;                    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structFilaVertice.html#a559d8e80bf287aead501a03b41d108af">   57</a></span>   <span class="keyword">struct </span><a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *<a class="code hl_variable" href="structFilaVertice.html#a559d8e80bf287aead501a03b41d108af">proximo</a>;   </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="grafo_8h.html#a280ee558fc5bb9e22902862f436dc7b8">   58</a></span> } <a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a>;</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_function" href="grafo_8h.html#a9c0b72a5d0d7e974cf7c9db3d528eb88">criarVertice</a> (<span class="keywordtype">char</span> frequencia, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_function" href="grafo_8h.html#ab3b46cf12eeacbbccd21823baf24ff19">inserirVertice</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">char</span> frequencia, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">bool</span> <a class="code hl_function" href="grafo_8h.html#af4a0b49cbdebfcdeb6b035b901403cb9">conectarVertices</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_function" href="grafo_8h.html#ae6ad1f4e031c092657b8d016efa617c8">libertarGrafo</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_function" href="grafo_8h.html#aabf0c3bf90e73cf54fcc35ae084afc45">carregarGrafo</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *nomeFicheiro, <span class="keywordtype">int</span> *linhas, <span class="keywordtype">int</span> *colunas);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *<a class="code hl_function" href="grafo_8h.html#aca9c0b1c830c9cd00dc072e98ca5e080">enfileirar</a>(<a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *fim, <a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_variable" href="structFilaVertice.html#a8d3f78a8345a5a0b05da916ef417bbb4">v</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *<a class="code hl_function" href="grafo_8h.html#a8d4bb4643d4017e535a8fe9878c6a964">desenfileirar</a>(<a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *inicio);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_struct" href="structVertice.html">Vertice</a> *<a class="code hl_function" href="grafo_8h.html#a3e4df272f95452838597c2ddd1f82bb4">primeiroFila</a>(<a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *inicio);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">bool</span> <a class="code hl_function" href="grafo_8h.html#a9bad5a55776d3ec0020dd27a1f3867d8">filaVazia</a>(<a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *inicio);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *<a class="code hl_function" href="grafo_8h.html#ab838a688421a2f9ce3c9803cd8130d62">libertarFila</a>(<a class="code hl_struct" href="structFilaVertice.html">FilaVertice</a> *inicio);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *<a class="code hl_function" href="grafo_8h.html#a41d078dd85c9dd11d318113ec9882b06">procuraLargura</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *<a class="code hl_function" href="grafo_8h.html#aa49cc47b2d0afa54c8886c25ae061e03">acumularCaminho</a>(<a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *acumulador, <a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *caminho);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *<a class="code hl_function" href="grafo_8h.html#aad5e47b8f8dbb19c0893ba46e2bf167a">intersecoesFrequencias</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">char</span> freqA, <span class="keywordtype">char</span> freqB);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *<a class="code hl_function" href="grafo_8h.html#ad9727a4ad1762818497d1400468cfd3e">procuraProfundidade</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="code hl_struct" href="structCoordenada.html">Coordenada</a> *<a class="code hl_function" href="grafo_8h.html#ab84249229ad08a70b758788e1f25da42">caminhosEntreAntenas</a>(<a class="code hl_struct" href="structVertice.html">Vertice</a> *grafo, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aantenas_8h_html"><div class="ttname"><a href="antenas_8h.html">antenas.h</a></div><div class="ttdoc">Definições das estruturas para representação e manipulação de antenas em lista ligada.</div></div>
+<div class="ttc" id="agrafo_8h_html_a3e4df272f95452838597c2ddd1f82bb4"><div class="ttname"><a href="grafo_8h.html#a3e4df272f95452838597c2ddd1f82bb4">primeiroFila</a></div><div class="ttdeci">Vertice * primeiroFila(FilaVertice *inicio)</div><div class="ttdoc">Obtém o vértice armazenado no início da fila.</div><div class="ttdef"><b>Definição</b> grafo.c:410</div></div>
+<div class="ttc" id="agrafo_8h_html_a41d078dd85c9dd11d318113ec9882b06"><div class="ttname"><a href="grafo_8h.html#a41d078dd85c9dd11d318113ec9882b06">procuraLargura</a></div><div class="ttdeci">Coordenada * procuraLargura(Vertice *grafo, int x, int y)</div><div class="ttdoc">Executa uma procura em largura no grafo a partir de uma antena específica.</div><div class="ttdef"><b>Definição</b> grafo.c:474</div></div>
+<div class="ttc" id="agrafo_8h_html_a8d4bb4643d4017e535a8fe9878c6a964"><div class="ttname"><a href="grafo_8h.html#a8d4bb4643d4017e535a8fe9878c6a964">desenfileirar</a></div><div class="ttdeci">FilaVertice * desenfileirar(FilaVertice *inicio)</div><div class="ttdoc">Remove o primeiro elemento da fila de vértices.</div><div class="ttdef"><b>Definição</b> grafo.c:388</div></div>
+<div class="ttc" id="agrafo_8h_html_a9bad5a55776d3ec0020dd27a1f3867d8"><div class="ttname"><a href="grafo_8h.html#a9bad5a55776d3ec0020dd27a1f3867d8">filaVazia</a></div><div class="ttdeci">bool filaVazia(FilaVertice *inicio)</div><div class="ttdoc">Verifica se a fila está vazia.</div><div class="ttdef"><b>Definição</b> grafo.c:430</div></div>
+<div class="ttc" id="agrafo_8h_html_a9c0b72a5d0d7e974cf7c9db3d528eb88"><div class="ttname"><a href="grafo_8h.html#a9c0b72a5d0d7e974cf7c9db3d528eb88">criarVertice</a></div><div class="ttdeci">Vertice * criarVertice(char frequencia, int x, int y)</div><div class="ttdoc">Cria dinamicamente um novo vértice que representa uma antena no grafo.</div><div class="ttdef"><b>Definição</b> grafo.c:160</div></div>
+<div class="ttc" id="agrafo_8h_html_aa49cc47b2d0afa54c8886c25ae061e03"><div class="ttname"><a href="grafo_8h.html#aa49cc47b2d0afa54c8886c25ae061e03">acumularCaminho</a></div><div class="ttdeci">Coordenada * acumularCaminho(Coordenada *acumulador, Coordenada *caminho)</div><div class="ttdoc">Copia os elementos de um caminho e acumula-os em uma lista de resultado.</div><div class="ttdef"><b>Definição</b> grafo.c:547</div></div>
+<div class="ttc" id="agrafo_8h_html_aabf0c3bf90e73cf54fcc35ae084afc45"><div class="ttname"><a href="grafo_8h.html#aabf0c3bf90e73cf54fcc35ae084afc45">carregarGrafo</a></div><div class="ttdeci">Vertice * carregarGrafo(const char *nomeFicheiro, int *linhas, int *colunas)</div><div class="ttdoc">Carrega uma matriz de antenas de um ficheiro de texto para um grafo dinâmico.</div><div class="ttdef"><b>Definição</b> grafo.c:40</div></div>
+<div class="ttc" id="agrafo_8h_html_aad5e47b8f8dbb19c0893ba46e2bf167a"><div class="ttname"><a href="grafo_8h.html#aad5e47b8f8dbb19c0893ba46e2bf167a">intersecoesFrequencias</a></div><div class="ttdeci">Coordenada * intersecoesFrequencias(Vertice *grafo, char freqA, char freqB)</div><div class="ttdoc">Encontra todas as combinações de pares de antenas com frequências distintas.</div><div class="ttdef"><b>Definição</b> grafo.c:664</div></div>
+<div class="ttc" id="agrafo_8h_html_ab3b46cf12eeacbbccd21823baf24ff19"><div class="ttname"><a href="grafo_8h.html#ab3b46cf12eeacbbccd21823baf24ff19">inserirVertice</a></div><div class="ttdeci">Vertice * inserirVertice(Vertice *grafo, char frequencia, int x, int y)</div><div class="ttdoc">Insere um novo vértice no grafo em ordem crescente pelas coordenadas (x, y).</div><div class="ttdef"><b>Definição</b> grafo.c:93</div></div>
+<div class="ttc" id="agrafo_8h_html_ab838a688421a2f9ce3c9803cd8130d62"><div class="ttname"><a href="grafo_8h.html#ab838a688421a2f9ce3c9803cd8130d62">libertarFila</a></div><div class="ttdeci">FilaVertice * libertarFila(FilaVertice *inicio)</div><div class="ttdoc">Liberta toda a memória alocada para a fila de vértices.</div><div class="ttdef"><b>Definição</b> grafo.c:446</div></div>
+<div class="ttc" id="agrafo_8h_html_ab84249229ad08a70b758788e1f25da42"><div class="ttname"><a href="grafo_8h.html#ab84249229ad08a70b758788e1f25da42">caminhosEntreAntenas</a></div><div class="ttdeci">Coordenada * caminhosEntreAntenas(Vertice *grafo, int x1, int y1, int x2, int y2)</div><div class="ttdoc">Encontra todos os caminhos possíveis entre duas antenas no grafo.</div><div class="ttdef"><b>Definição</b> grafo.c:708</div></div>
+<div class="ttc" id="agrafo_8h_html_aca9c0b1c830c9cd00dc072e98ca5e080"><div class="ttname"><a href="grafo_8h.html#aca9c0b1c830c9cd00dc072e98ca5e080">enfileirar</a></div><div class="ttdeci">FilaVertice * enfileirar(FilaVertice *fim, Vertice *v)</div><div class="ttdoc">Adiciona um vértice ao final da fila de procura em largura.</div><div class="ttdef"><b>Definição</b> grafo.c:357</div></div>
+<div class="ttc" id="agrafo_8h_html_ad9727a4ad1762818497d1400468cfd3e"><div class="ttname"><a href="grafo_8h.html#ad9727a4ad1762818497d1400468cfd3e">procuraProfundidade</a></div><div class="ttdeci">Coordenada * procuraProfundidade(Vertice *grafo, int x, int y)</div><div class="ttdoc">Executa uma procura em profundidade no grafo a partir de uma antena específica.</div><div class="ttdef"><b>Definição</b> grafo.c:318</div></div>
+<div class="ttc" id="agrafo_8h_html_ae6ad1f4e031c092657b8d016efa617c8"><div class="ttname"><a href="grafo_8h.html#ae6ad1f4e031c092657b8d016efa617c8">libertarGrafo</a></div><div class="ttdeci">Vertice * libertarGrafo(Vertice *grafo)</div><div class="ttdoc">Liberta toda a memória associada ao grafo.</div><div class="ttdef"><b>Definição</b> grafo.c:244</div></div>
+<div class="ttc" id="agrafo_8h_html_af4a0b49cbdebfcdeb6b035b901403cb9"><div class="ttname"><a href="grafo_8h.html#af4a0b49cbdebfcdeb6b035b901403cb9">conectarVertices</a></div><div class="ttdeci">bool conectarVertices(Vertice *grafo, int x1, int y1, int x2, int y2)</div><div class="ttdoc">Conecta dois vértices do grafo por arestas bidirecionais, se tiverem a mesma frequência.</div><div class="ttdef"><b>Definição</b> grafo.c:197</div></div>
+<div class="ttc" id="astructAresta_html"><div class="ttname"><a href="structAresta.html">Aresta</a></div><div class="ttdoc">Representa uma ligação entre dois vértices com mesma frequência.</div><div class="ttdef"><b>Definição</b> grafo.h:33</div></div>
+<div class="ttc" id="astructAresta_html_a15f4b2f6a01fe524e7c3c7a1937eb679"><div class="ttname"><a href="structAresta.html#a15f4b2f6a01fe524e7c3c7a1937eb679">Aresta::destino</a></div><div class="ttdeci">struct Vertice * destino</div><div class="ttdef"><b>Definição</b> grafo.h:34</div></div>
+<div class="ttc" id="astructAresta_html_a91bb2517bfe725bee1f7a873228a9958"><div class="ttname"><a href="structAresta.html#a91bb2517bfe725bee1f7a873228a9958">Aresta::proximo</a></div><div class="ttdeci">struct Aresta * proximo</div><div class="ttdef"><b>Definição</b> grafo.h:35</div></div>
+<div class="ttc" id="astructCoordenada_html"><div class="ttname"><a href="structCoordenada.html">Coordenada</a></div><div class="ttdoc">Representa uma posição genérica (x, y) na lista ligada.</div><div class="ttdef"><b>Definição</b> antenas.h:46</div></div>
+<div class="ttc" id="astructFilaVertice_html"><div class="ttname"><a href="structFilaVertice.html">FilaVertice</a></div><div class="ttdoc">Estrutura auxiliar para implementar fila na travessia em largura.</div><div class="ttdef"><b>Definição</b> grafo.h:55</div></div>
+<div class="ttc" id="astructFilaVertice_html_a559d8e80bf287aead501a03b41d108af"><div class="ttname"><a href="structFilaVertice.html#a559d8e80bf287aead501a03b41d108af">FilaVertice::proximo</a></div><div class="ttdeci">struct FilaVertice * proximo</div><div class="ttdef"><b>Definição</b> grafo.h:57</div></div>
+<div class="ttc" id="astructFilaVertice_html_a8d3f78a8345a5a0b05da916ef417bbb4"><div class="ttname"><a href="structFilaVertice.html#a8d3f78a8345a5a0b05da916ef417bbb4">FilaVertice::v</a></div><div class="ttdeci">Vertice * v</div><div class="ttdef"><b>Definição</b> grafo.h:56</div></div>
+<div class="ttc" id="astructVertice_html"><div class="ttname"><a href="structVertice.html">Vertice</a></div><div class="ttdoc">Representa uma antena no grafo com a sua posição e conexões.</div><div class="ttdef"><b>Definição</b> grafo.h:43</div></div>
+<div class="ttc" id="astructVertice_html_a1438c5dc5f780e2621b4350b2f940fb0"><div class="ttname"><a href="structVertice.html#a1438c5dc5f780e2621b4350b2f940fb0">Vertice::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definição</b> grafo.h:45</div></div>
+<div class="ttc" id="astructVertice_html_a40b6b8cc9000b134f9eb0609446a2ed5"><div class="ttname"><a href="structVertice.html#a40b6b8cc9000b134f9eb0609446a2ed5">Vertice::proximo</a></div><div class="ttdeci">struct Vertice * proximo</div><div class="ttdef"><b>Definição</b> grafo.h:47</div></div>
+<div class="ttc" id="astructVertice_html_ab79ea234797d03dd791601ceb2cfb766"><div class="ttname"><a href="structVertice.html#ab79ea234797d03dd791601ceb2cfb766">Vertice::frequencia</a></div><div class="ttdeci">char frequencia</div><div class="ttdef"><b>Definição</b> grafo.h:44</div></div>
+<div class="ttc" id="astructVertice_html_adedef9ffb6a2e66fdebbe25299bec5d3"><div class="ttname"><a href="structVertice.html#adedef9ffb6a2e66fdebbe25299bec5d3">Vertice::arestas</a></div><div class="ttdeci">Aresta * arestas</div><div class="ttdef"><b>Definição</b> grafo.h:46</div></div>
+<div class="ttc" id="astructVertice_html_ae9aae69725a37b059383c13ccd43a95e"><div class="ttname"><a href="structVertice.html#ae9aae69725a37b059383c13ccd43a95e">Vertice::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definição</b> grafo.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="grafo_8h.html">grafo.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

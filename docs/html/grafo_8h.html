@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto - Estruturas de Dados Avançadas - Thiago Abreu: Referência ao ficheiro grafo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Projeto - Estruturas de Dados Avançadas - Thiago Abreu
+   </div>
+   <div id="projectbrief">Grafo, Antenas e Locais Nefastos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('grafo_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro grafo.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definições de estruturas e protótipos de funções para grafos baseados em listas ligadas.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="antenas_8h_source.html">antenas.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagrama de dependências de inclusão para grafo.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="grafo_8h__incl.png" border="0" usemap="#agrafo_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="grafo_8h__dep__incl.png" border="0" usemap="#agrafo_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="grafo_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAresta.html">Aresta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa uma ligação entre dois vértices com mesma frequência.  <a href="structAresta.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVertice.html">Vertice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa uma antena no grafo com a sua posição e conexões.  <a href="structVertice.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilaVertice.html">FilaVertice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura auxiliar para implementar fila na travessia em largura.  <a href="structFilaVertice.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:a4dfeea32aaaf68604a93805ab84f33e1" id="r_a4dfeea32aaaf68604a93805ab84f33e1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structAresta.html">Aresta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a4dfeea32aaaf68604a93805ab84f33e1">Aresta</a></td></tr>
+<tr class="separator:a4dfeea32aaaf68604a93805ab84f33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901d403606dfb55e6d42b899c05d3347" id="r_a901d403606dfb55e6d42b899c05d3347"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVertice.html">Vertice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a901d403606dfb55e6d42b899c05d3347">Vertice</a></td></tr>
+<tr class="separator:a901d403606dfb55e6d42b899c05d3347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280ee558fc5bb9e22902862f436dc7b8" id="r_a280ee558fc5bb9e22902862f436dc7b8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFilaVertice.html">FilaVertice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a280ee558fc5bb9e22902862f436dc7b8">FilaVertice</a></td></tr>
+<tr class="separator:a280ee558fc5bb9e22902862f436dc7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a9c0b72a5d0d7e974cf7c9db3d528eb88" id="r_a9c0b72a5d0d7e974cf7c9db3d528eb88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a9c0b72a5d0d7e974cf7c9db3d528eb88">criarVertice</a> (char frequencia, int x, int y)</td></tr>
+<tr class="memdesc:a9c0b72a5d0d7e974cf7c9db3d528eb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria dinamicamente um novo vértice que representa uma antena no grafo.  <br /></td></tr>
+<tr class="separator:a9c0b72a5d0d7e974cf7c9db3d528eb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b46cf12eeacbbccd21823baf24ff19" id="r_ab3b46cf12eeacbbccd21823baf24ff19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#ab3b46cf12eeacbbccd21823baf24ff19">inserirVertice</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, char frequencia, int x, int y)</td></tr>
+<tr class="memdesc:ab3b46cf12eeacbbccd21823baf24ff19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo vértice no grafo em ordem crescente pelas coordenadas (x, y).  <br /></td></tr>
+<tr class="separator:ab3b46cf12eeacbbccd21823baf24ff19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a0b49cbdebfcdeb6b035b901403cb9" id="r_af4a0b49cbdebfcdeb6b035b901403cb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#af4a0b49cbdebfcdeb6b035b901403cb9">conectarVertices</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:af4a0b49cbdebfcdeb6b035b901403cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conecta dois vértices do grafo por arestas bidirecionais, se tiverem a mesma frequência.  <br /></td></tr>
+<tr class="separator:af4a0b49cbdebfcdeb6b035b901403cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ad1f4e031c092657b8d016efa617c8" id="r_ae6ad1f4e031c092657b8d016efa617c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#ae6ad1f4e031c092657b8d016efa617c8">libertarGrafo</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo)</td></tr>
+<tr class="memdesc:ae6ad1f4e031c092657b8d016efa617c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberta toda a memória associada ao grafo.  <br /></td></tr>
+<tr class="separator:ae6ad1f4e031c092657b8d016efa617c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf0c3bf90e73cf54fcc35ae084afc45" id="r_aabf0c3bf90e73cf54fcc35ae084afc45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#aabf0c3bf90e73cf54fcc35ae084afc45">carregarGrafo</a> (const char *nomeFicheiro, int *linhas, int *colunas)</td></tr>
+<tr class="memdesc:aabf0c3bf90e73cf54fcc35ae084afc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carrega uma matriz de antenas de um ficheiro de texto para um grafo dinâmico.  <br /></td></tr>
+<tr class="separator:aabf0c3bf90e73cf54fcc35ae084afc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9c0b1c830c9cd00dc072e98ca5e080" id="r_aca9c0b1c830c9cd00dc072e98ca5e080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#aca9c0b1c830c9cd00dc072e98ca5e080">enfileirar</a> (<a class="el" href="structFilaVertice.html">FilaVertice</a> *fim, <a class="el" href="structVertice.html">Vertice</a> *v)</td></tr>
+<tr class="memdesc:aca9c0b1c830c9cd00dc072e98ca5e080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um vértice ao final da fila de procura em largura.  <br /></td></tr>
+<tr class="separator:aca9c0b1c830c9cd00dc072e98ca5e080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4bb4643d4017e535a8fe9878c6a964" id="r_a8d4bb4643d4017e535a8fe9878c6a964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a8d4bb4643d4017e535a8fe9878c6a964">desenfileirar</a> (<a class="el" href="structFilaVertice.html">FilaVertice</a> *inicio)</td></tr>
+<tr class="memdesc:a8d4bb4643d4017e535a8fe9878c6a964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove o primeiro elemento da fila de vértices.  <br /></td></tr>
+<tr class="separator:a8d4bb4643d4017e535a8fe9878c6a964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4df272f95452838597c2ddd1f82bb4" id="r_a3e4df272f95452838597c2ddd1f82bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a3e4df272f95452838597c2ddd1f82bb4">primeiroFila</a> (<a class="el" href="structFilaVertice.html">FilaVertice</a> *inicio)</td></tr>
+<tr class="memdesc:a3e4df272f95452838597c2ddd1f82bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o vértice armazenado no início da fila.  <br /></td></tr>
+<tr class="separator:a3e4df272f95452838597c2ddd1f82bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bad5a55776d3ec0020dd27a1f3867d8" id="r_a9bad5a55776d3ec0020dd27a1f3867d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a9bad5a55776d3ec0020dd27a1f3867d8">filaVazia</a> (<a class="el" href="structFilaVertice.html">FilaVertice</a> *inicio)</td></tr>
+<tr class="memdesc:a9bad5a55776d3ec0020dd27a1f3867d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <br /></td></tr>
+<tr class="separator:a9bad5a55776d3ec0020dd27a1f3867d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab838a688421a2f9ce3c9803cd8130d62" id="r_ab838a688421a2f9ce3c9803cd8130d62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#ab838a688421a2f9ce3c9803cd8130d62">libertarFila</a> (<a class="el" href="structFilaVertice.html">FilaVertice</a> *inicio)</td></tr>
+<tr class="memdesc:ab838a688421a2f9ce3c9803cd8130d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberta toda a memória alocada para a fila de vértices.  <br /></td></tr>
+<tr class="separator:ab838a688421a2f9ce3c9803cd8130d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d078dd85c9dd11d318113ec9882b06" id="r_a41d078dd85c9dd11d318113ec9882b06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#a41d078dd85c9dd11d318113ec9882b06">procuraLargura</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, int x, int y)</td></tr>
+<tr class="memdesc:a41d078dd85c9dd11d318113ec9882b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa uma procura em largura no grafo a partir de uma antena específica.  <br /></td></tr>
+<tr class="separator:a41d078dd85c9dd11d318113ec9882b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49cc47b2d0afa54c8886c25ae061e03" id="r_aa49cc47b2d0afa54c8886c25ae061e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#aa49cc47b2d0afa54c8886c25ae061e03">acumularCaminho</a> (<a class="el" href="structCoordenada.html">Coordenada</a> *acumulador, <a class="el" href="structCoordenada.html">Coordenada</a> *caminho)</td></tr>
+<tr class="memdesc:aa49cc47b2d0afa54c8886c25ae061e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia os elementos de um caminho e acumula-os em uma lista de resultado.  <br /></td></tr>
+<tr class="separator:aa49cc47b2d0afa54c8886c25ae061e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5e47b8f8dbb19c0893ba46e2bf167a" id="r_aad5e47b8f8dbb19c0893ba46e2bf167a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#aad5e47b8f8dbb19c0893ba46e2bf167a">intersecoesFrequencias</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, char freqA, char freqB)</td></tr>
+<tr class="memdesc:aad5e47b8f8dbb19c0893ba46e2bf167a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra todas as combinações de pares de antenas com frequências distintas.  <br /></td></tr>
+<tr class="separator:aad5e47b8f8dbb19c0893ba46e2bf167a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9727a4ad1762818497d1400468cfd3e" id="r_ad9727a4ad1762818497d1400468cfd3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#ad9727a4ad1762818497d1400468cfd3e">procuraProfundidade</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, int x, int y)</td></tr>
+<tr class="memdesc:ad9727a4ad1762818497d1400468cfd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa uma procura em profundidade no grafo a partir de uma antena específica.  <br /></td></tr>
+<tr class="separator:ad9727a4ad1762818497d1400468cfd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84249229ad08a70b758788e1f25da42" id="r_ab84249229ad08a70b758788e1f25da42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8h.html#ab84249229ad08a70b758788e1f25da42">caminhosEntreAntenas</a> (<a class="el" href="structVertice.html">Vertice</a> *grafo, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:ab84249229ad08a70b758788e1f25da42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra todos os caminhos possíveis entre duas antenas no grafo.  <br /></td></tr>
+<tr class="separator:ab84249229ad08a70b758788e1f25da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Definições de estruturas e protótipos de funções para grafos baseados em listas ligadas. </p>
+<p>╔══════════════════════════════════════════════╗ ║ Projeto | Estruturas de Dados Avançadas ║ ║ Código desenvolvido por Thiago Abreu ║ ║ EST-IPCA, Barcelos — 2025 ║ ╚══════════════════════════════════════════════╝</p>
+<dl class="section author"><dt>Autor</dt><dd>Thiago Abreu </dd></dl>
+<p>Este cabeçalho define os tipos e as operações para representação de um grafo dinâmico, onde cada vértice representa uma antena e as arestas representam ligações com frequências iguais. São fornecidas funcionalidades de inserção, conexão, percursos em profundidade e largura, e identificação de caminhos e intersecções. </p>
+</div><h2 class="groupheader">Documentação dos tipos</h2>
+<a id="a4dfeea32aaaf68604a93805ab84f33e1" name="a4dfeea32aaaf68604a93805ab84f33e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfeea32aaaf68604a93805ab84f33e1">&#9670;&#160;</a></span>Aresta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structAresta.html">Aresta</a> <a class="el" href="structAresta.html">Aresta</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a280ee558fc5bb9e22902862f436dc7b8" name="a280ee558fc5bb9e22902862f436dc7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280ee558fc5bb9e22902862f436dc7b8">&#9670;&#160;</a></span>FilaVertice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFilaVertice.html">FilaVertice</a> <a class="el" href="structFilaVertice.html">FilaVertice</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a901d403606dfb55e6d42b899c05d3347" name="a901d403606dfb55e6d42b899c05d3347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901d403606dfb55e6d42b899c05d3347">&#9670;&#160;</a></span>Vertice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structVertice.html">Vertice</a> <a class="el" href="structVertice.html">Vertice</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aa49cc47b2d0afa54c8886c25ae061e03" name="aa49cc47b2d0afa54c8886c25ae061e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49cc47b2d0afa54c8886c25ae061e03">&#9670;&#160;</a></span>acumularCaminho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCoordenada.html">Coordenada</a> * acumularCaminho </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td>
+          <td class="paramname"><em>acumulador</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCoordenada.html">Coordenada</a> *&#160;</td>
+          <td class="paramname"><em>caminho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copia os elementos de um caminho e acumula-os em uma lista de resultado. </p>
+<p>Percorre a lista <code>caminho</code> e adiciona cada coordenada à lista <code>acumulador</code>. Usada para registrar trajetos completos entre vértices em procuras que identificam caminhos múltiplos.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">acumulador</td><td>Lista onde as coordenadas serão acumuladas. </td></tr>
+    <tr><td class="paramname">caminho</td><td>Lista de coordenadas representando um caminho a ser adicionado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista de coordenadas atualizada com os dados acumulados. </dd></dl>
+
+</div>
+</div>
+<a id="ab84249229ad08a70b758788e1f25da42" name="ab84249229ad08a70b758788e1f25da42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84249229ad08a70b758788e1f25da42">&#9670;&#160;</a></span>caminhosEntreAntenas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCoordenada.html">Coordenada</a> * caminhosEntreAntenas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encontra todos os caminhos possíveis entre duas antenas no grafo. </p>
+<p>Esta função procura todos os percursos válidos entre as antenas localizadas em (x1, y1) e (x2, y2), considerando apenas conexões entre vértices com a mesma frequência. Cada caminho é acumulado como uma lista ligada de coordenadas.</p>
+<p>Usa uma procura recursiva (<code>buscarCaminhos</code>) para explorar múltiplos ramos, e armazena todas as sequências encontradas na lista de resultados.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Lista ligada de vértices que representam o grafo. </td></tr>
+    <tr><td class="paramname">x1</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X da antena de origem. </td></tr>
+    <tr><td class="paramname">y1</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y da antena de origem. </td></tr>
+    <tr><td class="paramname">x2</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X da antena de destino. </td></tr>
+    <tr><td class="paramname">y2</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y da antena de destino. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista de coordenadas que representa os caminhos encontrados (em sequência), ou false se não houver caminho. </dd></dl>
+
+</div>
+</div>
+<a id="aabf0c3bf90e73cf54fcc35ae084afc45" name="aabf0c3bf90e73cf54fcc35ae084afc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf0c3bf90e73cf54fcc35ae084afc45">&#9670;&#160;</a></span>carregarGrafo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVertice.html">Vertice</a> * carregarGrafo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carrega uma matriz de antenas de um ficheiro de texto para um grafo dinâmico. </p>
+<p>Lê o ficheiro linha por linha, caractere por caractere, ignorando os pontos ('.') e transformando os restantes caracteres em vértices do grafo. Cada caractere é interpretado como uma antena com frequência (char) e coordenadas (x, y) calculadas com base na posição no ficheiro.</p>
+<p>A função também atualiza os valores apontados por <code>linhas</code> e <code>colunas</code>, correspondendo às dimensões da matriz lida. A matriz pode ter qualquer tamanho retangular válido.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>Caminho para o ficheiro de entrada contendo a matriz textual. </td></tr>
+    <tr><td class="paramname">linhas</td><td>Apontador para armazenar a quantidade de linhas da matriz carregada. </td></tr>
+    <tr><td class="paramname">colunas</td><td>Apontador para armazenar a quantidade de colunas da matriz carregada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para a cabeça do grafo construído ou false em caso de erro. </dd></dl>
+
+</div>
+</div>
+<a id="af4a0b49cbdebfcdeb6b035b901403cb9" name="af4a0b49cbdebfcdeb6b035b901403cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a0b49cbdebfcdeb6b035b901403cb9">&#9670;&#160;</a></span>conectarVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool conectarVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conecta dois vértices do grafo por arestas bidirecionais, se tiverem a mesma frequência. </p>
+<p>Esta função procura dois vértices localizados nas coordenadas fornecidas. Se ambos forem encontrados e tiverem a mesma frequência de ressonância, cria-se uma conexão entre eles por meio de arestas em ambas as direções.</p>
+<p>A conexão é válida apenas entre vértices com frequências iguais.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices do grafo. </td></tr>
+    <tr><td class="paramname">x1</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X do primeiro vértice. </td></tr>
+    <tr><td class="paramname">y1</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y do primeiro vértice. </td></tr>
+    <tr><td class="paramname">x2</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X do segundo vértice. </td></tr>
+    <tr><td class="paramname">y2</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y do segundo vértice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se a ligação foi criada com sucesso, false caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a9c0b72a5d0d7e974cf7c9db3d528eb88" name="a9c0b72a5d0d7e974cf7c9db3d528eb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0b72a5d0d7e974cf7c9db3d528eb88">&#9670;&#160;</a></span>criarVertice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVertice.html">Vertice</a> * criarVertice </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>frequencia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria dinamicamente um novo vértice que representa uma antena no grafo. </p>
+<p>Aloca memória para um vértice, inicia os seus campos com a frequência fornecida e as coordenadas (x, y), e define os apontadores de ligação (<code>arestas</code> e <code>proximo</code>) como NULL.</p>
+<p>Esta função não insere o vértice diretamente no grafo — ela apenas o cria. A inserção ordenada é feita posteriormente pela função <code>inserirVertice</code>.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequencia</td><td>Letra que identifica a frequência de ressonância da antena. </td></tr>
+    <tr><td class="paramname">x</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X da antena. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y da antena. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o novo vértice criado ou false se a alocação falhar. </dd></dl>
+
+</div>
+</div>
+<a id="a8d4bb4643d4017e535a8fe9878c6a964" name="a8d4bb4643d4017e535a8fe9878c6a964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4bb4643d4017e535a8fe9878c6a964">&#9670;&#160;</a></span>desenfileirar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFilaVertice.html">FilaVertice</a> * desenfileirar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td>
+          <td class="paramname"><em>inicio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove o primeiro elemento da fila de vértices. </p>
+<p>Liberta a memória do primeiro nó da fila e retorna o próximo, permitindo o avanço da procura em largura.</p>
+<p>Caso a fila esteja vazia, retorna false.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para o primeiro elemento atual da fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o novo primeiro elemento da fila, ou false se a fila estava vazia. </dd></dl>
+
+</div>
+</div>
+<a id="aca9c0b1c830c9cd00dc072e98ca5e080" name="aca9c0b1c830c9cd00dc072e98ca5e080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9c0b1c830c9cd00dc072e98ca5e080">&#9670;&#160;</a></span>enfileirar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFilaVertice.html">FilaVertice</a> * enfileirar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td>
+          <td class="paramname"><em>fim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona um vértice ao final da fila de procura em largura. </p>
+<p>Esta função aloca um novo nó de fila contendo o vértice especificado e conecta-o ao final da fila atual, caso ela não esteja vazia.</p>
+<p>Utilizada na implementação da procura em largura.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fim</td><td>Apontador para o último elemento atual da fila. </td></tr>
+    <tr><td class="paramname">v</td><td>Apontador para o vértice a ser enfileirado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o novo último elemento da fila, ou false em caso de falha. </dd></dl>
+
+</div>
+</div>
+<a id="a9bad5a55776d3ec0020dd27a1f3867d8" name="a9bad5a55776d3ec0020dd27a1f3867d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bad5a55776d3ec0020dd27a1f3867d8">&#9670;&#160;</a></span>filaVazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool filaVazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td>
+          <td class="paramname"><em>inicio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está vazia. </p>
+<p>Retorna true se o ponteiro de início for NULL, indicando que não há elementos na fila.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para o primeiro nó da fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se a fila estiver vazia, false caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="ab3b46cf12eeacbbccd21823baf24ff19" name="ab3b46cf12eeacbbccd21823baf24ff19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b46cf12eeacbbccd21823baf24ff19">&#9670;&#160;</a></span>inserirVertice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVertice.html">Vertice</a> * inserirVertice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>frequencia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo vértice no grafo em ordem crescente pelas coordenadas (x, y). </p>
+<p>A função cria um novo vértice com a frequência e coordenadas fornecidas, e insere-o na posição correta na lista ligada que representa o grafo. A ordenação é feita primeiro por coordenada X e, em caso de empate (ser igual), por coordenada Y.</p>
+<p>Se já existir um vértice nas mesmas coordenadas (x, y), a inserção é ignorada.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices. </td></tr>
+    <tr><td class="paramname">frequencia</td><td>Caractere que representa a frequência da antena. </td></tr>
+    <tr><td class="paramname">x</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X do novo vértice. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y do novo vértice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início atualizado da lista, ou false em caso de erro ou duplicada. </dd></dl>
+
+</div>
+</div>
+<a id="aad5e47b8f8dbb19c0893ba46e2bf167a" name="aad5e47b8f8dbb19c0893ba46e2bf167a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5e47b8f8dbb19c0893ba46e2bf167a">&#9670;&#160;</a></span>intersecoesFrequencias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCoordenada.html">Coordenada</a> * intersecoesFrequencias </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>freqA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>freqB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encontra todas as combinações de pares de antenas com frequências distintas. </p>
+<p>Para cada antena com frequência <code>freqA</code>, a função procura todas as antenas com frequência <code>freqB</code> e adiciona as coordenadas de ambos à lista <code>resultado</code>. Cada par é representado por dois nós consecutivos na lista resultante.</p>
+<p>Útil para analisar possíveis intersecções ou interações entre diferentes tipos de antenas no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices do grafo. </td></tr>
+    <tr><td class="paramname">freqA</td><td>Frequência do primeiro grupo de antenas. </td></tr>
+    <tr><td class="paramname">freqB</td><td>Frequência do segundo grupo de antenas. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista de coordenadas dos pares de intersecções encontradas. </dd></dl>
+
+</div>
+</div>
+<a id="ab838a688421a2f9ce3c9803cd8130d62" name="ab838a688421a2f9ce3c9803cd8130d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab838a688421a2f9ce3c9803cd8130d62">&#9670;&#160;</a></span>libertarFila()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFilaVertice.html">FilaVertice</a> * libertarFila </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td>
+          <td class="paramname"><em>inicio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Liberta toda a memória alocada para a fila de vértices. </p>
+<p>Percorre a lista de nós da fila, desalocando cada elemento. Após a execução, nenhum nó da fila permanece na memória.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para o primeiro nó da fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>false após libertação completa da fila. </dd></dl>
+
+</div>
+</div>
+<a id="ae6ad1f4e031c092657b8d016efa617c8" name="ae6ad1f4e031c092657b8d016efa617c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ad1f4e031c092657b8d016efa617c8">&#9670;&#160;</a></span>libertarGrafo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVertice.html">Vertice</a> * libertarGrafo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Liberta toda a memória associada ao grafo. </p>
+<p>Esta função percorre a lista de vértices do grafo e, para cada vértice, desaloca todas as arestas associadas. Em seguida, remove o próprio vértice.</p>
+<p>Ao final da execução, nenhum espaço de memória alocado para o grafo permanece ocupado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices do grafo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>false após a liberação completa dos vértices e arestas. </dd></dl>
+
+</div>
+</div>
+<a id="a3e4df272f95452838597c2ddd1f82bb4" name="a3e4df272f95452838597c2ddd1f82bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4df272f95452838597c2ddd1f82bb4">&#9670;&#160;</a></span>primeiroFila()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVertice.html">Vertice</a> * primeiroFila </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFilaVertice.html">FilaVertice</a> *&#160;</td>
+          <td class="paramname"><em>inicio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o vértice armazenado no início da fila. </p>
+<p>Retorna o vértice associado ao primeiro nó da fila, sem removê-lo. Útil para consultar o próximo vértice a ser processado durante a procura em largura.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para o primeiro nó da fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o vértice armazenado, ou false se a fila estiver vazia. </dd></dl>
+
+</div>
+</div>
+<a id="a41d078dd85c9dd11d318113ec9882b06" name="a41d078dd85c9dd11d318113ec9882b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d078dd85c9dd11d318113ec9882b06">&#9670;&#160;</a></span>procuraLargura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCoordenada.html">Coordenada</a> * procuraLargura </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executa uma procura em largura no grafo a partir de uma antena específica. </p>
+<p>Localiza o vértice correspondente às coordenadas (x, y) e inicia uma procura em largura. A procura percorre todos os vértices alcançáveis por conexões (arestas), utilizando uma fila para controlar a ordem de visita.</p>
+<p>Cada vértice visitado é registado na lista <code>resultado</code>, que é retornada ao final.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices. </td></tr>
+    <tr><td class="paramname">x</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X do vértice de origem. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y do vértice de origem. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista de coordenadas de todos os vértices alcançados a partir do ponto de origem, ou false se não for encontrado. </dd></dl>
+
+</div>
+</div>
+<a id="ad9727a4ad1762818497d1400468cfd3e" name="ad9727a4ad1762818497d1400468cfd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9727a4ad1762818497d1400468cfd3e">&#9670;&#160;</a></span>procuraProfundidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCoordenada.html">Coordenada</a> * procuraProfundidade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertice.html">Vertice</a> *&#160;</td>
+          <td class="paramname"><em>grafo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executa uma procura em profundidade no grafo a partir de uma antena específica. </p>
+<p>Localiza o vértice com as coordenadas fornecidas e inicia a procura em profundidade a partir dele. Todos os vértices alcançáveis por arestas são acumulados em uma lista de coordenadas, retornada ao final da operação.</p>
+<p>A função ignora vértices não conectados ao ponto de origem.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grafo</td><td>Apontador para o início da lista de vértices do grafo. </td></tr>
+    <tr><td class="paramname">x</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> X do vértice de partida. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structCoordenada.html" title="Representa uma posição genérica (x, y) na lista ligada.">Coordenada</a> Y do vértice de partida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista de coordenadas visitadas a partir do vértice de origem, ou false se não encontrado. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="grafo_8h.html">grafo.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
